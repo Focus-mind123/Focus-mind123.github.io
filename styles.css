@@ -52,6 +52,15 @@ nav a:hover{
 color:#00d4ff;
 }
 
+.menu-toggle{
+display:none;
+background:none;
+border:none;
+color:white;
+font-size:28px;
+cursor:pointer;
+}
+
 .hero{
 text-align:center;
 padding:120px 20px;
@@ -154,6 +163,9 @@ color:#777;
 padding-top:220px;
 }
 
+nav{
+display:none;
+}
 
 
   /* ========================= */
@@ -202,29 +214,51 @@ padding:80px 5%;
 
 @media (max-width: 600px){
 
+@media (max-width:600px){
+
 header{
-width:92%;
+width:90%;
+padding:15px 20px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+position:absolute;
+top:70px;
+right:20px;
+
+background:#111827;
 padding:15px;
+border-radius:15px;
+
 flex-direction:column;
-gap:12px;
+align-items:flex-start;
+gap:15px;
+
+min-width:160px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
-.logo{
-font-size:22px;
-}
-
-
-nav a{
-font-size:14px;
+nav.show{
+display:flex;
 }
 
 .hero{
-padding:220px 20px 80px;
+padding-top:180px;
 }
 
 .hero h1{
 font-size:32px;
-line-height:1.2;
+}
+
+}
+.logo{
+font-size:22px;
 }
 
 .hero p{
