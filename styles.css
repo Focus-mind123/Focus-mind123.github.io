@@ -213,11 +213,6 @@ gap:12px;
 font-size:22px;
 }
 
-nav{
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-}
 
 nav a{
 font-size:14px;
@@ -263,6 +258,15 @@ height:auto;
 .shot img{
 width:100%;
 height:auto;
+}
+
+}
+
+@media (max-width:600px){
+
+nav{
+overflow-x:auto;
+white-space:nowrap;
 }
 
 }
