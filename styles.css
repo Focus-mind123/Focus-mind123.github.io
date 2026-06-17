@@ -5,6 +5,10 @@ background:#0d1117;
 color:white;
 }
 
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
 header{
 position:fixed;
 top:20px;
@@ -61,9 +65,13 @@ font-size:28px;
 cursor:pointer;
 }
 
+/* ========================= */
+/* HERO */
+/* ========================= */
+
 .hero{
 text-align:center;
-padding:120px 20px;
+padding:220px 20px 120px;
 }
 
 .hero h1{
@@ -87,6 +95,10 @@ background:linear-gradient(45deg,#0066ff,#00c896);
 color:white;
 font-size:18px;
 }
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
 
 .features{
 padding:100px 10%;
@@ -112,6 +124,10 @@ border-radius:15px;
 .card h3{
 color:#00e1ff;
 }
+
+/* ========================= */
+/* SCREENSHOTS */
+/* ========================= */
 
 .screenshots{
 padding:100px 10%;
@@ -147,10 +163,18 @@ object-fit:contain;
 background:#111827;
 }
 
+/* ========================= */
+/* DOWNLOAD */
+/* ========================= */
+
 .download{
 padding:100px 20px;
 text-align:center;
 }
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 footer{
 text-align:center;
@@ -159,20 +183,11 @@ background:#070a0f;
 color:#777;
 }
 
-.hero{
-padding-top:220px;
-}
-
-nav{
-display:none;
-}
-
-
-  /* ========================= */
+/* ========================= */
 /* TABLETS */
 /* ========================= */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
 header{
 width:90%;
@@ -207,12 +222,9 @@ padding:80px 5%;
 
 }
 
-
 /* ========================= */
 /* CELULARES */
 /* ========================= */
-
-@media (max-width: 600px){
 
 @media (max-width:600px){
 
@@ -221,10 +233,15 @@ width:90%;
 padding:15px 20px;
 }
 
+.logo{
+font-size:22px;
+}
+
 .menu-toggle{
 display:block;
 }
 
+/* Ocultar menú normal */
 nav{
 display:none;
 position:absolute;
@@ -242,23 +259,25 @@ gap:15px;
 min-width:160px;
 
 box-shadow:0 10px 30px rgba(0,0,0,.4);
+z-index:1001;
 }
 
+/* Mostrar menú al pulsar ☰ */
 nav.show{
 display:flex;
 }
 
+nav a{
+font-size:14px;
+}
+
 .hero{
-padding-top:180px;
+padding:180px 20px 80px;
 }
 
 .hero h1{
 font-size:32px;
-}
-
-}
-.logo{
-font-size:22px;
+line-height:1.2;
 }
 
 .hero p{
@@ -292,15 +311,6 @@ height:auto;
 .shot img{
 width:100%;
 height:auto;
-}
-
-}
-
-@media (max-width:600px){
-
-nav{
-overflow-x:auto;
-white-space:nowrap;
 }
 
 }
