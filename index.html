@@ -151,6 +151,19 @@ function toggleMenu() {
     document.getElementById("mobileMenu")
             .classList.toggle("show");
 }
+
+window.onload = function() {
+
+    const links = document.querySelectorAll("#mobileMenu a");
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            document.getElementById("mobileMenu")
+                    .classList.remove("show");
+        });
+    });
+
+};
 </script>
 
 </body>
