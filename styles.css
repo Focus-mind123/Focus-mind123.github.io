@@ -155,3 +155,114 @@ padding-top:220px;
 }
 
 
+
+  /* ========================= */
+/* TABLETS */
+/* ========================= */
+
+@media (max-width: 768px){
+
+header{
+width:90%;
+padding:15px 20px;
+}
+
+.logo{
+font-size:20px;
+}
+
+nav{
+gap:15px;
+}
+
+.hero{
+padding:180px 20px 100px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.features,
+.screenshots,
+.download{
+padding:80px 5%;
+}
+
+}
+
+
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media (max-width: 600px){
+
+header{
+width:92%;
+padding:15px;
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+font-size:22px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+nav a{
+font-size:14px;
+}
+
+.hero{
+padding:220px 20px 80px;
+}
+
+.hero h1{
+font-size:32px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:15px;
+max-width:100%;
+}
+
+.download-btn{
+padding:12px 25px;
+font-size:16px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.card{
+padding:25px;
+}
+
+.shots{
+gap:15px;
+}
+
+.shot{
+width:90%;
+max-width:250px;
+height:auto;
+}
+
+.shot img{
+width:100%;
+height:auto;
+}
+
+}
