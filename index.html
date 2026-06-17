@@ -18,9 +18,13 @@
 FocusMind
 </div>
 
-<nav>
-<a href="#features">Funciones</a>
-<a href="#screenshots">Capturas</a>
+<button class="menu-toggle" onclick="toggleMenu()">
+☰
+</button>
+
+<nav id="mobileMenu">
+    <a href="#features">Funciones</a>
+    <a href="#download">Descargar</a>
 </nav>
 
 </header>
@@ -141,6 +145,14 @@ Descargar APK
 
 <footer>
 </footer>
+
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu")
+            .classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
