@@ -39,7 +39,7 @@ Una app de estudio inteligente que ayuda a niños y padres
 a organizar tareas, controlar el uso del celular y mejorar la concentración.
 </p>
 
-<a href="https://github.com/Focus-mind123/Focus-mind123.github.io/releases/download/v1.0/FocusMind.apk" class="download-btn">
+<a href="https://github.com/Focus-mind123/Focus-mind123.github.io/releases/download/v1.0/FocusMind.apk" class="download-btn" download="FocusMind.apk">
 Descargar para Android
 </a>
 
@@ -135,7 +135,7 @@ si necesita ayuda.
 
 <p>Disponible exclusivamente para Android</p>
 
-<a href="https://github.com/Focus-mind123/Focus-mind123.github.io/releases/download/v1.0/FocusMind.apk" class="download-btn">
+<a href="https://github.com/Focus-mind123/Focus-mind123.github.io/releases/download/v1.0/FocusMind.apk" class="download-btn" download="FocusMind.apk">
 Descargar APK
 </a>
 
@@ -157,7 +157,7 @@ window.onload = function() {
     const links = document.querySelectorAll("#mobileMenu a");
 
     links.forEach(link => {
-        link.addEventListener("click", () => {
+        clickedLink.addEventListener("click", () => {
             document.getElementById("mobileMenu")
                     .classList.remove("show");
         });
